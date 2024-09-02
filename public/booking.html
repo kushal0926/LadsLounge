@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lads Lounge</title>
+    <link rel="stylesheet" href="bookingstyles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">Back to Home</a>
+        <h1>Lads Loungue Booking Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="sagar tamang" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+977 9806779801" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="services">Select Service</label>
+                <select id="services" name="services" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="coloring">Hair Coloring</option>
+                    <option value="styling">Hair Styling</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="stylist">Preferred Stylist (Optional)</label>
+                <select id="stylist" name="stylist">
+                    <option value="" disabled selected>Any stylist</option>
+                    <option value="stylist1">Sagar</option>
+                    <option value="stylist2">Suman</option>
+                    <option value="stylist3">Kushal</option>
+                </select>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
