@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lads Lounge</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
     <header class="hero">
         <nav>
-            <h1 class="logo">Lads <span>Lounge</span></h1>
+            <img src="/images/ladslounge.png" alt="Lads Loungue">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
             <button onclick="navigateToPage()">Book Now</button>
         </nav>
@@ -23,7 +25,7 @@
             <p>The pinnacle of male grooming</p>
         </div>
         <div class="home-contact">
-            <a href="#contact">Contact</a>
+            <button onclick="navigateToPage()">Book Now</button>
         </div>
         
     </header>
@@ -32,24 +34,52 @@
 
     <section class="about" id="about">
         <div class="container1">
-            <img src="/images/IMG_0449.webp">
+            <img src="/images/jason-leung-2seUdPQNy_I-unsplash.jpg">
             <div class="text-content">
             <h2>How the Lads Loungue was created?</h2>
-            <article>I searched for a place that provided quality cuts in a fun atmosphere without breaking the bank.We couldn't find one, so we created our own.The talanted barbers and stylists at Lads Loungue serve up the latest styles to men all while having a good time.</article>
+            <article>I searched for a place that provided quality<br> cuts in a fun atmosphere without breaking the bank.We couldn't find one, so we created our own.The talanted barbers and stylists at Lads Loungue serve up the latest styles to men all<br> while having a good time.</article>
         </div>
         </div>
 
         <div class="container2">
             <div class="text-content">
             <h2>Our Culture</h2>
-            <article>Our shop is a reflection of our local city. Come in and soak up the good vibes, listen to great music and enjoy while you get a fresh new cut.</article>
+            <article>Our shop is a reflection of our local city.<br> Come in and soak up the good vibes, listen<br> to great music and enjoy while you get a<br> fresh new cut.</article>
         </div>
-        <img src="/images/IMG_0449.webp">
+        <img src="/images/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg">
         </div>
+    </section>
 
+    <div class="booking">
+        <h1>Book Your seat now</h1>
+        <button onclick="navigateToPage()">Book Now</button>
+    </div>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="icon-container">
+        <div class="location">
+            <h2>Address</h2>
+            <p><i class="ri-map-pin-fill"></i>Pokhara, Nayabazar</p>
+        </div>
+        <div class="number">
+            <h2>Phone number</h2>
+            <p><i class="ri-phone-fill"></i>+977 9806779801</p>
+        </div>
+    </div>
 
 
     </section>
+
+    <footer>
+        <img src="/images/lads.png" alt="logo">
+        <ul>
+            <li><a href="booking.html">Book online <span>|</span></a></li>
+            <li><a href="services.html"> About us </a></li>
+        </ul>
+
+        <p class="copyright">&copy;2024  All rights reserved. - Lads Lounge</p>
+    </footer>
     
 
 
