@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lads Lounge</title>
     <link rel="stylesheet" href="bookingstyles.css">
+
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-button">Back to Home</a>
-        <h1>Lads Loungue Booking Form</h1>
+        <div class="image">
+            <!-- will content the image -->
+            <a href="index.html" class="back-button">Back to Home</a>
+        </div>
+        
+        <div class="form-container">
+        <h1>Reserve your seat now</h1>
         <form action="#" method="post">
             <div class="form-group">
                 <label for="name">Full Name</label>
@@ -25,7 +31,7 @@
             </div>
             <div class="form-group">
                 <label for="time">Preferred Time</label>
-                <input type="time" id="time" name="time" required>
+                <input type="time" id="time" name="time"  required>
             </div>
             <div class="form-group">
                 <label for="services">Select Service</label>
@@ -36,19 +42,12 @@
                     <option value="styling">Hair Styling</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="stylist">Preferred Stylist (Optional)</label>
-                <select id="stylist" name="stylist">
-                    <option value="" disabled selected>Any stylist</option>
-                    <option value="stylist1">Sagar</option>
-                    <option value="stylist2">Suman</option>
-                    <option value="stylist3">Kushal</option>
-                </select>
-            </div>
             <button type="submit">Book Appointment</button>
         </form>
     </div>
+    </div>
 
+   
 
     <script src="script.js"></script>
 </body>

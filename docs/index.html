@@ -7,26 +7,36 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+   
 </head>
 <body>
     <header class="hero">
-        <nav>
+        <nav class="navbar">
             <img src="/images/ladslounge.png" alt="Lads Loungue">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="#contact">Contact us</a></li>
             </ul>
-            <button onclick="navigateToPage()">Book Now</button>
+    </div> 
+    <button onclick="navigateToPage()">Book Now</button>
         </nav>
 
         <div class="home">
-            <h1>Your Barber<br> <span>Waiting For You</span></h1>
+            <h1>Welcome To<br> <span>Lads Lounge</span></h1>
             <p>The pinnacle of male grooming</p>
+
+            <div class="home-contact">
+                <button onclick="navigateToPage()">Book Now</button>
+            </div>
         </div>
-        <div class="home-contact">
-            <button onclick="navigateToPage()">Book Now</button>
-        </div>
+        
         
     </header>
 
@@ -37,7 +47,7 @@
             <img src="/images/jason-leung-2seUdPQNy_I-unsplash.jpg">
             <div class="text-content">
             <h2>How the Lads Loungue was created?</h2>
-            <article>I searched for a place that provided quality<br> cuts in a fun atmosphere without breaking the bank.We couldn't find one, so we created our own.The talanted barbers and stylists at Lads Loungue serve up the latest styles to men all<br> while having a good time.</article>
+            <article> searched for a place that provided quality<br> cuts in a fun atmosphere without breaking the bank.We couldn't find one, so we created our own.The talanted barbers and stylists at Lads Loungue serve up the latest styles to men all<br> while having a good time.</article>
         </div>
         </div>
 
@@ -50,7 +60,7 @@
         </div>
     </section>
 
-    <div class="booking">
+    <div class="booking" id="booking">
         <h1>Book Your seat now</h1>
         <button onclick="navigateToPage()">Book Now</button>
     </div>
@@ -77,11 +87,9 @@
             <li><a href="booking.html">Book online <span>|</span></a></li>
             <li><a href="services.html"> About us </a></li>
         </ul>
-
         <p class="copyright">&copy;2024  All rights reserved. - Lads Lounge</p>
     </footer>
     
-
 
     <script src="script.js"></script>
 </body>

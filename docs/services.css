@@ -11,22 +11,19 @@ html, body {
     height: 100%;
     font-family: "New Amsterdam", sans-serif;
     font-style: normal;
+    background-color: black;
 }
 
 .hero {
-    height: 180vh;
+    height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/images/wallpaperflare.com_wallpaper.jpg);
-    background-size: cover;
-    background-position: center;
-
 }
 
 .intro {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 10% 0 10%;
+    padding: 20px 5%;
 }
 
 
@@ -49,41 +46,34 @@ span {
 
 .services {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     
 }
 
 .services h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .services p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
 
 .container {
     display: flex;
-    align-items: center; /* Vertically aligns items */
-    justify-content: center; /* Horizontally aligns items */
-    padding: 20px;
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px;
 }
 
-.address {
-    margin: 1rem 7rem auto 2rem;
-}
 
-.hours {
-    margin: 1rem 2rem auto 7rem;
-}
-
-.appointment {
-    margin: 1rem 3rem auto 3rem;
+address, .hours, .appointment {
+    margin: 0.5rem 2rem; 
 }
 
 .appointment h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 
 }
 
@@ -105,7 +95,7 @@ span {
 
 
 .pricing {
-    height: 400vh;
+    height: 100vh;
     width: 100%;
     background-color: black;
 }
@@ -118,7 +108,7 @@ span {
 .pricing p {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .pricing-tag {
@@ -126,7 +116,7 @@ span {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .pricing-tag:last-child {
@@ -134,13 +124,13 @@ span {
 }
 
 .service-name {
-    font-size: 6rem;
+    font-size: 3.5rem;
     color: white;
     margin-left: 1rem;
 }
 
 .price {
-    font-size: 6rem;
+    font-size: 3.5rem;
     color: white;
     font-weight: bold;
     margin-right: 1rem;
@@ -150,15 +140,16 @@ span {
 
 .booking {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url(/images/blackTheme.jpg);
+    url(/images/dan-gold-07AAmZ1dECU-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 65vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .booking h1 {
@@ -166,7 +157,7 @@ span {
 }
 
 .booking button{
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 
@@ -175,7 +166,7 @@ span {
 /* styling the footer element */
 
 footer {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background-color: black;
     display: flex;
@@ -185,8 +176,8 @@ footer {
 }
 
 footer img {
-    width: 9rem;
-    height: 9rem;
+    width: 6.5rem;
+    height: 6rem;
     
 }
 
@@ -211,36 +202,13 @@ footer ul a:hover {
 
 .copyright {
     font-size: 1rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 button {
     border: none;
     background: crimson;
-    padding: 12px 30px;
+    padding: 10px 25px;
     border-radius: 30px;
     color: white;
     font-weight: bold;
@@ -253,3 +221,108 @@ button:hover {
     cursor: pointer;
 }
 
+
+
+/* Responsive Media Queries */
+
+/* Tablets and small screens (768px and below) */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .services p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .address, .hours, .appointment {
+        margin: 0.5rem 0;
+    }
+
+    .appointment h3 {
+        font-size: 1.8rem;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .container p {
+        font-size: 1.3rem;
+    }
+
+    .service-name, .price {
+        font-size: 3rem;
+    }
+
+    .pricing h1 {
+        font-size: 3.5rem;
+    }
+
+    .pricing p {
+        font-size: 1.2rem;
+    }
+
+    footer ul li a {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .hero {
+        height: 100vh; 
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .pricing h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-name, .price {
+        font-size: 2.5rem;
+    }
+
+
+    footer img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    footer ul li a {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
